@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**************************/
+/*header de navegación*/
+header{
+    /*width - ancho*/
+    width:100%;
+    /*height - largo*/
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    /*Justificar a la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-seccion{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntitos de lista*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-seccion a{
+    margin-right: 15px;
+    color: rgb(21,21,21)
+}
+
+/*Icono de menú*/
+nav .nav-right-seccion .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    margin-top: 1px;
+    margin-left: 14px;
+}
+
+/*Foto de perfil*/
+nav .nav-right-seccion .perfil{
+    margin-left: 20px;
+    background-image: url(https://lh3.googleusercontent.com/ogw/AAEL6shEyPug4TKylRYhTywW0X1Iumxlv_6CW0Rnx2eXcQ=s32-c-mo);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /*Redondear foto*/
+    margin-top: 1px;
+}
+
+/*************************************************/
+/*main*/
+main{
+    text-align: center;
+}
+
+main .main-logo{
+    margin-top: 16px;
+    margin-bottom: 23px;
+}
+
+main .main-input{
+    display: flex;
+    justify-content: center;
+    width: 585px;
+    height: 48px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 590px;
+    border-radius: 80px;
+    border: 1px solid #e0e2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 469px;
+    height: 42px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0px 1px 6px 1px  rgb(224, 223, 223);
+}
+
+.main-input .search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+.main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.main-input .cam-icon{
+    background-image:url("https://media.discordapp.net/attachments/1078439993271398553/1091819945328914512/lens.png");
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-left: 18px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+    box-sizing: 50px;
+}
+
+.main-buttons .boton-Google:hover{
+    color: #090b13;
+    box-shadow: 1px 2px 0px 0px rgb(206, 204, 204);
+    cursor: pointer;
+}
+
+.main-buttons .boton-Suerte:hover{
+    color: #090b13;
+    box-shadow: 1px 2px 0px 0px rgb(206, 204, 204);
+    cursor:pointer;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    color:rgb(66, 64, 64);
+    border:none;
+    background-color: #f8f9fa;
+    /*margin: 9px 5px;*/
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+    height: 35px;
+    padding: 0px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*div país*/
+.pais{
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    color: #70757A;
+    display:block;
+    height: 45px;
+    padding: 15px 30px 0px;
+    display:block;
+    margin-top: 250px;
+}
+/*********************************************************/
+/*Sección footer*/
+
+
+footer{
+    background-color: #f2f2f2   ;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 15px;
+    border-top: 1px solid #e4e4e4;
+    /*Fotter dividido en columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /*Posiciona el footer al final*/
+    bottom: 0%;
+}
+
+footer ul{
+    margin: 15px;
+    list-style: none;
+    display:flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self:left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li option{
+    color: #1c1d20;
+}
+
+ footer ul li a{
+    color: #70757a;
+    margin: 10px;
+ }
+
+ footer ul li label{
+    color: #70757a;
+    margin: 10px;
+ }  
